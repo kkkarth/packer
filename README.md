@@ -2,20 +2,22 @@
 
 
 ## Getting started
-bash
-# Switch to SloopStash Packer kit directory.
+```bash
+# Switch to Packer project directory.
 $ cd /opt/kickstart-packer
+
 # Initialize Packer template.
-$ packer init module/ubuntu-linux-24-04/virtualbox/amd64/server/vagrant.pkr.hcl
+$ packer init module/ubuntu-linux-24-04/virtualbox/amd64/server/main.pkr.hcl
 
 # Validate Packer template.
-$ packer validate module/ubuntu-linux-24-04/virtualbox/amd64/server/vagrant.pkr.hcl
+$ packer validate module/ubuntu-linux-24-04/virtualbox/amd64/server/main.pkr.hcl
 
 # Build VM image using Packer template.
-$ packer build --force module/ubuntu-linux-24-04/virtualbox/amd64/server/vagrant.pkr.hcl
+$ packer build --force module/ubuntu-linux-24-04/virtualbox/amd64/server/main.pkr.hcl
+```
 
 
 ## Get support
-- [Issues](https://github.com/kkkarth/packer/issues)
+- [Issues](https://github.com)
 
  
